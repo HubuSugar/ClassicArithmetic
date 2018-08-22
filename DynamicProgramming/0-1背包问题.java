@@ -21,6 +21,7 @@ public class Main_01背包问题 {
              value_copy[i + 1] = value[i];
          }
          //创建一个关于对象数和阈值的一个数组
+         //math[i][j]表示对于第i件物品，容量为j时能获得的最大价值
          int[][] math = new int[length + 1][threshold + 1];
          for(int i = 1;i <= length;i++){
              for(int j = 1;j <= threshold;j++){
